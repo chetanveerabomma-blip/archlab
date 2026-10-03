@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #fdfbf7;
+    --border-color: #000000;
+    --shadow-color: #000000;
+  }
+  
+  .dark {
+    --bg-main: #121217;
+    --border-color: #000000;
+    --shadow-color: #000000;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #111827;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .dark body {
+    color: #f3f4f6;
+  }
+}
+
+/* Neobrutalism custom utilities */
+.neo-box {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.15s ease-in-out;
+}
+
+.dark .neo-box {
+  background-color: #1a1b23;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #facc15;
+}
+
+.neo-box-sm {
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.dark .neo-box-sm {
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px 0px #facc15;
+}
+
+.neo-box-lg {
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.dark .neo-box-lg {
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px 0px #facc15;
+}
+
+.neo-btn {
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.dark .neo-btn {
+  box-shadow: 4px 4px 0px 0px #facc15;
+}
+
+.dark .neo-btn:hover {
+  box-shadow: 6px 6px 0px 0px #facc15;
+}
+
+.dark .neo-btn:active {
+  box-shadow: 2px 2px 0px 0px #facc15;
+}
+
+.neo-input {
+  border: 2px solid #000000;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: 2px 2px 0px 0px #000000;
+  outline: none;
+}
+
+.neo-input:focus {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.dark .neo-input {
+  background-color: #262833 !important;
+  color: #ffffff !important;
+  border-color: #000000;
+  box-shadow: 2px 2px 0px 0px #facc15;
+}
+
+.dark .neo-input:focus {
+  box-shadow: 4px 4px 0px 0px #facc15;
+}
